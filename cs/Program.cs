@@ -7,19 +7,24 @@ namespace cs
     {
         static void Main(string[] args)
         {
-            string str, str2;
-            
+            string str1, str2, str3;
+
             Console.WriteLine("Введи число 1: ");
-            str = Console.ReadLine();
-            double a = Convert.ToInt64(str);
+            str1 = Console.ReadLine();
 
-            Console.WriteLine("Введи число 2: ");
+            Console.WriteLine("Введи число 2:");
             str2 = Console.ReadLine();
-            double b = Convert.ToInt64(str2);
 
-            double result = (a + b) / 2;
+            Console.WriteLine("Введи число 3:");
+            str3 = Console.ReadLine();
 
-            Console.WriteLine(result);
+            int a=Convert.ToInt32(str1);
+            int b=Convert.ToInt32(str2);
+            int c=Convert.ToInt32(str3);
+
+            Console.WriteLine("Сумма: " + (a + b + c));
+            Console.WriteLine("Произведение: " + (a * b * c));
+
 
         }
     }
